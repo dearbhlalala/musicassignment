@@ -1,21 +1,59 @@
-[gd_scene load_steps=3 format=3 uid="uid://y5gngggrc4xo"]
+[gd_scene load_steps=6 format=3 uid="uid://y5gngggrc4xo"]
 
 [ext_resource type="Script" path="res://music.gd" id="1_qew7q"]
 [ext_resource type="AudioStream" uid="uid://ddhnu4een3dwl" path="res://kitty-meow-85182.mp3" id="2_k7h2y"]
+[ext_resource type="AudioStream" uid="uid://cl3kuk6yqt3ou" path="res://single-dog-bark-king-charles-spaniel-41366.mp3" id="3_b6loa"]
+[ext_resource type="AudioStream" uid="uid://dxrp1382ykthy" path="res://sheep-bleating-223324.mp3" id="4_j8x1m"]
+[ext_resource type="AudioStream" uid="uid://gbvfcfq5nnff" path="res://078921_cow-38460.mp3" id="5_xv86b"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_qew7q")
 
 [node name="Button" type="Button" parent="."]
-offset_left = 424.0
-offset_top = 235.0
-offset_right = 644.0
-offset_bottom = 340.0
+offset_left = 154.0
+offset_top = 185.0
+offset_right = 306.0
+offset_bottom = 248.0
 theme_override_font_sizes/font_size = 40
-text = "Start"
+text = "Meow
+"
 
 [node name="Cat Meow" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(424, 235)
+position = Vector2(227, 109)
 stream = ExtResource("2_k7h2y")
 
+[node name="Button2" type="Button" parent="."]
+offset_left = 316.0
+offset_top = 187.0
+offset_right = 470.0
+offset_bottom = 248.0
+text = "Woof"
+
+[node name="Woof" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(590, 134)
+stream = ExtResource("3_b6loa")
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 483.0
+offset_top = 187.0
+offset_right = 635.0
+offset_bottom = 249.0
+text = "Baa"
+
+[node name="Baa" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_j8x1m")
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 647.0
+offset_top = 186.0
+offset_right = 801.0
+offset_bottom = 248.0
+text = "Moo"
+
+[node name="Moo" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_xv86b")
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]

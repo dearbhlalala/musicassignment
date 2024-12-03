@@ -57,8 +57,8 @@ text = "Music
 
 [node name="Illustration9" type="Sprite2D" parent="CanvasGroup"]
 z_index = -1
-position = Vector2(-5, -3)
-scale = Vector2(0.449063, 0.449062)
+position = Vector2(-2.40013, -3)
+scale = Vector2(0.451094, 0.449062)
 texture = ExtResource("8_trucs")
 
 [node name="Button" type="Button" parent="CanvasGroup"]

@@ -1,11 +1,15 @@
-[gd_scene load_steps=9 format=3 uid="uid://y5gngggrc4xo"]
+[gd_scene load_steps=13 format=3 uid="uid://y5gngggrc4xo"]
 
 [ext_resource type="Script" path="res://music.gd" id="1_qew7q"]
+[ext_resource type="Texture2D" uid="uid://fd16atuo4vh8" path="res://cat.png" id="2_88xxq"]
 [ext_resource type="AudioStream" uid="uid://dbp1gpd7o6pvd" path="res://background-childrens-music-for-video-old-macdonald-had-a-farm-34-sec-188184.mp3" id="2_enjud"]
 [ext_resource type="AudioStream" uid="uid://ddhnu4een3dwl" path="res://kitty-meow-85182.mp3" id="2_k7h2y"]
 [ext_resource type="AudioStream" uid="uid://cl3kuk6yqt3ou" path="res://single-dog-bark-king-charles-spaniel-41366.mp3" id="3_b6loa"]
 [ext_resource type="AudioStream" uid="uid://dxrp1382ykthy" path="res://sheep-bleating-223324.mp3" id="4_j8x1m"]
+[ext_resource type="Texture2D" uid="uid://dbjnvdslsag6f" path="res://dog.png" id="5_r3bkr"]
 [ext_resource type="AudioStream" uid="uid://gbvfcfq5nnff" path="res://078921_cow-38460.mp3" id="5_xv86b"]
+[ext_resource type="Texture2D" uid="uid://dj0md4jh2wsxa" path="res://sheep.png" id="6_q1j4h"]
+[ext_resource type="Texture2D" uid="uid://dg2qyk58u4126" path="res://cow.png" id="7_h7k0t"]
 [ext_resource type="PackedScene" uid="uid://bxw43g3hyxkn2" path="res://h_slider.tscn" id="7_xfmx3"]
 [ext_resource type="Texture2D" uid="uid://cqny4pomkyi4i" path="res://Illustration9.png" id="8_trucs"]
 
@@ -51,48 +55,52 @@ offset_bottom = -1.0
 text = "Music
 "
 
-[node name="Button" type="Button" parent="CanvasGroup"]
-offset_left = -514.0
-offset_top = 231.0
-offset_right = -362.0
-offset_bottom = 294.0
-theme_override_font_sizes/font_size = 40
-text = "Meow
-"
-metadata/_edit_use_anchors_ = true
-
-[node name="Button2" type="Button" parent="CanvasGroup"]
-offset_left = -308.0
-offset_top = 232.0
-offset_right = -154.0
-offset_bottom = 295.0
-theme_override_font_sizes/font_size = 40
-text = "Woof"
-metadata/_edit_use_anchors_ = true
-
-[node name="Button3" type="Button" parent="CanvasGroup"]
-offset_left = -89.0
-offset_top = 233.0
-offset_right = 63.0
-offset_bottom = 296.0
-theme_override_font_sizes/font_size = 40
-text = "Baa"
-metadata/_edit_use_anchors_ = true
-
-[node name="Button4" type="Button" parent="CanvasGroup"]
-offset_left = 123.0
-offset_top = 234.0
-offset_right = 277.0
-offset_bottom = 297.0
-theme_override_font_sizes/font_size = 40
-text = "Moo"
-metadata/_edit_use_anchors_ = true
-
 [node name="Illustration9" type="Sprite2D" parent="CanvasGroup"]
 z_index = -1
-position = Vector2(0, 1)
-scale = Vector2(0.449688, 0.449687)
+position = Vector2(-5, -3)
+scale = Vector2(0.449063, 0.449062)
 texture = ExtResource("8_trucs")
+
+[node name="Button" type="Button" parent="CanvasGroup"]
+offset_left = -551.0
+offset_top = 142.0
+offset_right = -375.0
+offset_bottom = 306.0
+theme_override_font_sizes/font_size = 40
+icon = ExtResource("2_88xxq")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button2" type="Button" parent="CanvasGroup"]
+offset_left = -338.0
+offset_top = 152.0
+offset_right = -164.0
+offset_bottom = 313.0
+theme_override_font_sizes/font_size = 40
+icon = ExtResource("5_r3bkr")
+flat = true
+expand_icon = true
+
+[node name="Button3" type="Button" parent="CanvasGroup"]
+offset_left = -120.0
+offset_top = 159.0
+offset_right = 72.0
+offset_bottom = 304.0
+theme_override_font_sizes/font_size = 40
+icon = ExtResource("6_q1j4h")
+flat = true
+expand_icon = true
+
+[node name="Button4" type="Button" parent="CanvasGroup"]
+offset_left = 91.0
+offset_top = 112.0
+offset_right = 314.0
+offset_bottom = 345.0
+theme_override_font_sizes/font_size = 40
+icon = ExtResource("7_h7k0t")
+flat = true
+expand_icon = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
